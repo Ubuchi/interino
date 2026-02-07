@@ -11,9 +11,6 @@
 
     body {
       margin: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
       background-color: #fff;
       color: #1a1a1a;
       font-family: 'Georgia', 'Times New Roman', serif;
@@ -22,33 +19,29 @@
     }
 
     main {
-      flex: 1;
       display: flex;
       justify-content: center;
-      padding: 60px 20px;
+      padding: 80px 20px 60px;
     }
 
     .content-box {
-      max-width: 780px;
-      text-align: center;
+      max-width: 820px;
       font-size: 1.2rem;
+      text-align: left;
     }
 
     h2 {
       font-size: 1.15rem;
       font-weight: bold;
-      margin: 48px 0 16px;
+      margin: 56px 0 20px;
     }
 
     p {
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     ul, ol {
-      margin: 0 auto 24px;
-      padding-left: 20px;
-      text-align: left;
-      max-width: 620px;
+      margin: 0 0 26px 24px;
     }
 
     li {
@@ -68,32 +61,32 @@
     }
 
     footer {
-      padding: 60px 20px;
-      text-align: center;
-      background-color: #fafafa;
+      padding: 50px 20px 70px;
+      border-top: 1px solid #eee;
       font-family: 'Helvetica Neue', Arial, sans-serif;
       font-size: 0.9rem;
       color: #666;
     }
 
-    footer a {
-      color: #666;
-      border-bottom: none;
-      text-decoration: none;
-      margin: 0 10px;
+    .footer-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: left;
     }
 
-    footer a:hover {
+    .footer-links a {
+      margin-right: 18px;
+      color: #666;
+      border-bottom: none;
+    }
+
+    .footer-links a:hover {
       color: #000;
     }
 
     @media (max-width: 600px) {
       .content-box {
         font-size: 1.05rem;
-      }
-
-      ul, ol {
-        max-width: 100%;
       }
     }
   </style>
@@ -105,7 +98,7 @@
   <article class="content-box">
 
     <p>
-      Hay momentos en los que una organización no necesita más análisis, más diagnósticos ni más planes.<br>
+      Hay momentos en los que una organización no necesita más análisis, más diagnósticos ni más planes.
       El contexto ya está claro. La información existe.
     </p>
 
@@ -121,19 +114,19 @@
     <h2>Qué entiendo por liderazgo interino</h2>
 
     <p>
-      Liderazgo interino no es consultoría.<br>
-      No es asesoría.<br>
+      Liderazgo interino no es consultoría.
+      No es asesoría.
       No es acompañamiento desde fuera.
     </p>
 
     <p>
-      Es <strong>entrar</strong>, <strong>asumir autoridad</strong>, <strong>tomar decisiones</strong> y
-      <strong>responder por las consecuencias</strong> durante un periodo definido.
+      Es <strong>entrar</strong>, <strong>asumir autoridad</strong>, <strong>tomar decisiones</strong>
+      y <strong>responder por las consecuencias</strong> durante un periodo definido.
     </p>
 
     <p>
-      El rol existe para momentos específicos:<br>
-      cuando la continuidad importa más que la comodidad<br>
+      El rol existe para momentos específicos:
+      cuando la continuidad importa más que la comodidad
       y cuando alguien tiene que hacerse cargo de lo que está ocurriendo, no solo explicarlo.
     </p>
 
@@ -148,7 +141,7 @@
     </ul>
 
     <p>
-      No entro a “mejorar”.<br>
+      No entro a “mejorar”.
       Entro cuando <strong>hay que estabilizar, corregir y volver a avanzar</strong>.
     </p>
 
@@ -165,7 +158,7 @@
     </ol>
 
     <p>
-      En contextos críticos, <strong>la claridad es una forma de cuidado</strong>.<br>
+      En contextos críticos, <strong>la claridad es una forma de cuidado</strong>.
       Evitar conversaciones difíciles para proteger sensibilidades suele prolongar los problemas
       y aumentar el costo para todos.
     </p>
@@ -183,38 +176,45 @@
     </p>
 
     <p>
-      Las organizaciones no existen aisladas.<br>
+      Las organizaciones no existen aisladas.
       Forman parte de un sistema mayor.
     </p>
 
     <p>
       El liderazgo, cuando es real, no busca beneficio individual,
-      sino <strong>equilibrio colectivo</strong>.<br>
+      sino <strong>equilibrio colectivo</strong>.
       Asume que todos estamos, de una u otra forma, <strong>en el mismo barco</strong>.
     </p>
 
-    <h2>Marco más amplio</h2>
-
-    <p>Este trabajo se conecta con una visión más amplia:</p>
+    <h2>Cómo continuar</h2>
 
     <p>
-      <a href="https://lubezky.com">Identidad y propósito</a><br>
-      <a href="https://inteligencia.com">Inteligencia compartida</a><br>
-      <a href="https://elmismobarco.com">Interdependencia</a><br>
-      <a href="https://unnuevopuntodevista.com">Cambio de punto de vista</a>
+      Si estás leyendo esto, probablemente ya sabes si la situación que enfrentas
+      requiere responsabilidad directa y un mandato claro.
     </p>
 
     <p>
-      Estas páginas no explican mi trabajo.<br>
-      Explican <strong>desde dónde lo hago</strong>.
+      La conversación puede empezar de forma simple.
+      Puedes escribirme directamente a
+  <a href="mailto:contacto@liderazgointerino.com">contacto@liderazgointerino.com</a>.
+    </p>
+    
+    <p>
+  Quedo atento a tus comentarios.
     </p>
 
   </article>
 </main>
 
 <footer>
-  <a href="https://www.linkedin.com/in/sergiolubezky/">LinkedIn</a> |
-  <a href="mailto:contacto@liderazgointerino.com">Correo</a>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/sergiolubezky/">LinkedIn</a>
+      <a href="mailto:contacto@liderazgointerino.com">Correo</a>
+      <a href="https://lubezky.com">Lubezky.com</a>
+      <a href="https://www.youtube.com/playlist?list=PLOecieZCC_CbdDwQLKLKtpLoRiTw-Bv_h">Podcast · El Bien Común</a>
+    </div>
+  </div>
 </footer>
 
 </body>
