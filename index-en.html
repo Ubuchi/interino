@@ -37,16 +37,7 @@
       margin-bottom: 60px;
     }
 
-    header img {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 1px solid #eee;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      margin-bottom: 15px;
-    }
-
+    /* REMOVE IMAGE, KEEP NAME */
     header .name {
       font-family: 'Helvetica Neue', Arial, sans-serif;
       font-size: 0.9rem;
@@ -109,24 +100,60 @@
       background-color: rgba(0,0,0,0.02);
     }
 
+    /* STANDARD FOOTER */
     footer {
-      padding: 50px 20px 70px;
-      border-top: 1px solid #eee;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      font-size: 0.9rem;
-      color: #666;
+      padding: 60px 20px;
       text-align: center;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
     }
 
-    footer a {
-      color: #666;
-      border-bottom: none;
+    .profile-img {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      object-fit: cover;
+      border: 1px solid #eee;
+    }
+
+    .name-link {
       text-decoration: none;
-      margin: 0 12px;
+      color: inherit;
+      display: block;
+      margin-bottom: 10px;
     }
 
-    footer a:hover {
+    .name {
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .social-nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      font-size: 0.85rem;
+    }
+
+    .social-nav a {
+      color: #666;
+      text-decoration: none;
+    }
+
+    .social-nav a:hover {
       color: #000;
+    }
+
+    .social-nav li:not(:last-child)::after {
+      content: "-";
+      margin-left: 12px;
+      color: #ccc;
     }
 
     @media (max-width: 600px) {
@@ -147,7 +174,6 @@
   <article class="content-box">
 
     <header>
-      <img src="foto-sergio.jpg" alt="Sergio Lubezky">
       <div class="name">Sergio Lubezky</div>
     </header>
 
@@ -243,7 +269,7 @@
     <p>
       <a href="https://inteligencia.com">Intelligence (inteligencia.com)</a><br>
       <a href="https://elmismobarco.com">The Same Boat (elmismobarco.com)</a><br>
-      <a href="https://unnuevopuntodevista.com">A New Point of View (unnuevopuntodevista.com</a>
+      <a href="https://unnuevopuntodevista.com">A New Point of View (unnuevopuntodevista.com)</a>
     </p>
 
     <p>
@@ -276,12 +302,20 @@
 </main>
 
 <footer>
-  <a href="https://www.linkedin.com/in/sergiolubezky/">LinkedIn</a>
-  <a href="mailto:contact@liderazgointerino.com">Email</a>
-  <a href="https://lubezky.com">Lubezky.com</a>
-  <a href="https://www.youtube.com/playlist?list=PLOecieZCC_CbdDwQLKLKtpLoRiTw-Bv_h">
-    El Bien Común Podcast
-  </a>
+    <img src="/foto-sergio.jpg" alt="Sergio Lubezky" class="profile-img">
+    
+    <a href="https://lubezky.com" class="name-link">
+        <span class="name">Sergio Lubezky</span>
+    </a>
+    
+    <ul class="social-nav">
+        <li><a href="https://www.linkedin.com/in/sergiolubezky/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://x.com/slubezky" target="_blank">X</a></li>
+        <li><a href="https://www.facebook.com/sergiolubezky/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.instagram.com/sergiolubezky/" target="_blank">Instagram</a></li>
+        <li><a href="https://open.spotify.com/show/1aZSsv60nXP2XbemIVhVqk" target="_blank">Podcast</a></li>
+        <li><a href="https://coachdefoto.com" target="_blank">Photography</a></li>
+    </ul>
 </footer>
 
 </body>
