@@ -8,21 +8,39 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "@id": "https://lubezky.com/#sergio",
-        "name": "Sergio Lubezky",
-        "url": "https://lubezky.com"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://lubezky.com/#sergio",
+      "name": "Sergio Lubezky",
+      "url": "https://lubezky.com"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://liderazgointerino.com/errores-en-una-crisis-organizacional/#article",
+      "headline": "Errores comunes en una crisis organizacional: cómo evitarlos",
+      "url": "https://liderazgointerino.com/errores-en-una-crisis-organizacional/",
+      "author": { "@id": "https://lubezky.com/#sergio" },
+      "publisher": { 
+        "@type": "Organization",
+        "@id": "https://liderazgointerino.com/#organization" 
       },
-      {
-        "@type": "WebPage",
-        "name": "Errores en una crisis organizacional",
-        "url": "https://liderazgointerino.com/errores-en-una-crisis-organizacional/"
-      }
-    ]
-  }
+      "description": "Un análisis profundo sobre los fallos de liderazgo y operativos que hunden a las empresas en crisis.",
+      "about": [
+        { "@type": "Thing", "name": "Crisis Management" },
+        { "@type": "Thing", "name": "Organizational Leadership" }
+      ],
+      "mentions": [
+        {
+          "@type": "WebPage",
+          "name": "Análisis de Empresas en Crisis",
+          "url": "https://inteligencia.com/empresa-en-crisis/"
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <style>
